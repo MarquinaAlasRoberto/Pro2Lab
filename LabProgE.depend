@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1712389249 source:c:\users\marqu\documents\homeworks c3\labproge\main.cpp
+	<iostream>
+	"Cliente.h"
+	"Fecha.h"
+	"Pago.h"
+	"Prestamo.h"
+
+1712361812 c:\users\marqu\documents\homeworks c3\labproge\include\cliente.h
+	<iostream>
+
+1712361873 source:c:\users\marqu\documents\homeworks c3\labproge\src\cliente.cpp
+	"Cliente.h"
+
+1712365197 c:\users\marqu\documents\homeworks c3\labproge\include\fecha.h
+
+1712365485 source:c:\users\marqu\documents\homeworks c3\labproge\src\fecha.cpp
+	"Fecha.h"
+	<iostream>
+
+1712366362 source:c:\users\marqu\documents\homeworks c3\labproge\src\pago.cpp
+	"Pago.h"
+
+1712365987 c:\users\marqu\documents\homeworks c3\labproge\include\pago.h
+	"Fecha.h"
+	<iostream>
+
+1712389297 c:\users\marqu\documents\homeworks c3\labproge\include\prestamo.h
+	"Cliente.h"
+	"Pago.h"
+	"Fecha.h"
+
+1712389271 source:c:\users\marqu\documents\homeworks c3\labproge\src\prestamo.cpp
+	"Prestamo.h"
+	<iostream>
+
