@@ -24,7 +24,7 @@ Cliente *agregarCliente(){
 Cliente *Clientee;
 int Id;
 string N,A;
-    cout<<"Escriba en este orden: el ID, Nombre, Apellido del cliente para poder agregralo"<<endl;
+    cout<<"Escriba en este orden: el ID, Nombre, Apellido del cliente para poder agregarlo"<<endl;
     cin>>Id;
     cin>>N;
     cin>>A;
@@ -101,10 +101,10 @@ void mostrarCliente(Cliente *lst[],int cont){
 }
 void mostrarPrestamo(Prestamo *lst[],int cont){
    if(cont == 0){
-    cout<<"la lista esta llena\n";
+    cout<<"La lista esta llena\n";
    }
    else{
-    cout<<"ID\T.cliente\tMopnto\n";
+    cout<<"ID\T.cliente\tMonto\n";
     for(int i=0;i <cont;i++){
         Prestamo *Pre=lst[i];
         cout<<Pre->getNumeroPrestamo()<<"\t";
@@ -149,11 +149,11 @@ int main()
                     cout << "El cliente se agrego con exito\n";
                 }
                 else{
-                    cout << "La lista de prestamos esta llena o  vacia\n";
+                    cout << "La lista de prestamos se encuentra llena o vacia\n";
                 }
       }
       else{
-        cout<<"no se encontro el cliente asi que no se registro el prestamp";
+        cout<<"No fue posible encontrar al cliente, imposible agregar prestamo.";
         }
       }
       break;
@@ -183,7 +183,7 @@ int main()
                 }
       }
       else{
-        cout<<"no se encontro el cliente asi que no se registro el prestamp";
+        cout<<"no se encontro el cliente, prestamo denegado";
         }
       }
       break;
@@ -210,7 +210,7 @@ int main()
                 cout<<"Fecha del prestamo ";
                 prest->getFechaAprobacion();
                 if(prest->getContadorPagos()==0){
-                    cout<<"no se hay ningun pago \n";
+                    cout<<"No hay ningun pago \n";
                 }
                 else{
                     cout<<"LISTA DE PAGO REALIZADOS\n";
@@ -225,7 +225,7 @@ int main()
                 }
         }
             else{
-                cout << "La lista de prestamos esta llena o  vacia\n";
+                cout << "La lista de prestamos esta llena o vacia\n";
             }
       }
       else{
@@ -237,7 +237,7 @@ int main()
     cout << "Saliendo del Programa...\n";
     break;
     default:
-    cout << "Error, opcion no esta definida";
+    cout << "Error, esta opcion no esta definida";
     break;
 
  }
